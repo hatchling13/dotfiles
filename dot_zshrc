@@ -100,15 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# pnpm
-export PNPM_HOME="/Users/hatchling/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-source /Users/hatchling/.config/broot/launcher/bash/br
-export JAVA_HOME="/Users/hatchling/Library/Caches/Coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%252B7/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.19_7.tar.gz/jdk-11.0.19+7/Contents/Home"
 export GPG_TTY=$(tty)
 autoload -Uz compinit && compinit
 eval "$(~/.local/bin/mise activate zsh)"
