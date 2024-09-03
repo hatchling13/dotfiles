@@ -1,0 +1,26 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Jung Wook Park
+	email = hatchling3713@gmail.com
+	signingkey = 360B4F6CA13B4D76C4C65825BBA3A752C68781B5
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[pull]
+	rebase = true
+[include]
+	path = ~/.gitconfig.local
+[branch]
+	sort = committerdate
+[merge]
+	conflictstyle = zdiff3
+[url "git@github.com:"]
+	insteadOf = https://github.com
+[alias]
+	adog = log --all --decorate --oneline --graph
+[log]
+	date = iso8601
